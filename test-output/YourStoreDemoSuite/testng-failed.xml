@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [YourStoreDemoSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="YourStoreTestScripts(failed)">
+    <classes>
+      <class name="com.yourstore.qa.testcases.SearchTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifySearchWithInvalidProduct"/>
+        </methods>
+      </class> <!-- com.yourstore.qa.testcases.SearchTest -->
+      <class name="com.yourstore.qa.testcases.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyLoginWithValidCredentials_1st"/>
+          <include name="verifyLoginWithValidCredentials_2nd"/>
+          <include name="verifyLoginWithInvalidCredentials"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.yourstore.qa.testcases.LoginTest -->
+    </classes>
+  </test> <!-- YourStoreTestScripts(failed) -->
+</suite> <!-- Failed suite [YourStoreDemoSuite] -->
